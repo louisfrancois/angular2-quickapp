@@ -6,6 +6,7 @@ import { CourseService } from './courses.service'
     template: `
         <h2>Courses</h2>
         {{ title }}
+        <input type="text" autoGrow />
         <ul>
             <li *ngFor="#course of courses">
                 {{ course }}
@@ -16,7 +17,7 @@ import { CourseService } from './courses.service'
 })
 export class CoursesComponent {
     title = "The title of courses page";
-    courses;
+    courses: string[];
 
     constructor(courseService: CourseService){
         this.courses = courseService.getCourses();

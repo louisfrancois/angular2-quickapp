@@ -29,7 +29,7 @@ System.register(['angular2/core', './courses.service'], function(exports_1, cont
                 CoursesComponent = __decorate([
                     core_1.Component({
                         selector: 'courses',
-                        template: "\n        <h2>Courses</h2>\n        {{ title }}\n        <ul>\n            <li *ngFor=\"#course of courses\">\n                {{ course }}\n            </li>\n        </ul>\n        ",
+                        template: "\n        <h2>Courses</h2>\n        {{ title }}\n        <input type=\"text\" autoGrow />\n        <ul>\n            <li *ngFor=\"#course of courses\">\n                {{ course }}\n            </li>\n        </ul>\n        ",
                         providers: [courses_service_1.CourseService]
                     }), 
                     __metadata('design:paramtypes', [courses_service_1.CourseService])
